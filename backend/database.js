@@ -11,38 +11,38 @@ const pool = mysql.createPool({
     database: process.env.MYSQL_DATABASE
 }).promise();
 
-async function getAlleKonten() {
+export async function getAlleKonten() {
     const [konten] = await pool.query("select * from konto");
     return konten;
 }
 
-async function getKonto(nummer) {
+export async function getKonto(nummer) {
     const [konto] = await pool.query("select * from konto where nummer = ?", [nummer]);
     return konto[0];
 }
 
-async function createKonto(nummer, bezeichnung) {
+export async function createKonto(nummer, bezeichnung) {
     const [konto] = await pool.query("insert into konto (nummer, bezeichnung, soll, haben) values (?, ?, 0, 0)", [nummer, bezeichnung]);
     return konto;
 }
 
-async function updateKonto(nummer, soll) {
+export async function updateKontoSoll(nummer, soll) {
     const [konto] = await pool.query("update konto set soll = ? where nummer = ?", [soll, nummer]);
     return konto[0];
 }
 
-async function updateKonto(nummer, haben) {
+export async function updateKontoHaben(nummer, haben) {
     const [konto] = await pool.query("update konto set haben = ? where nummer = ?", [haben, nummer]);
     return konto[0];
 }
 
-async function deleteKonto(nummer) {
+export async function deleteKonto(nummer) {
     const [konto] = await pool.query("delete from konto where nummer = ?", [nummer]);
     return konto;
 }
 
-console.log(await getKonto(2800));
-console.log(await createKonto(4000, 'Handelswaren-Erlöse'));
+/*console.log(await getKonto(2800));
+//console.log(await createKonto(4000, 'Handelswaren-Erlöse'));
 console.log(await updateKonto(4000, 2000));
 console.log(await deleteKonto(2080));
-console.log(await getAlleKonten());
+console.log(await getAlleKonten());*/
