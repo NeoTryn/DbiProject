@@ -8,6 +8,9 @@ import { getKonto,
     createKonto } from './database.js'
 
 const app = express();
+
+app.use(express.json());
+
 const port = process.env.EXPRESS_PORT || 8080;
 
 app.get('/konto', async (req, res) => {
@@ -31,21 +34,28 @@ app.post('/konto', async (req, res) => {
 })
 
 app.put('/konto/nummer/:nummer/haben', async (req, res) => {
-    const haben = req.body;
+    const { haben } = req.body;
     const nummer = req.params.nummer;
     const konto = await updateKontoHaben(req.params.nummer, haben);
     res.status(200).send(konto);
 })
 
 app.put('/konto/nummer/:nummer/soll', async (req, res) => {
-    const soll = req.body;
+    const { soll } = req.body;
     const nummer = req.params.nummer;
     const konto = await updateKontoSoll(nummer, soll);
     res.status(200).send(konto);
 })
 
+app.delete('/konto/nummer/:nummer', async (req, res) => {
+    const nummer = req.params.nummer;
+    const konto = await deleteKonto(nummer);
+    res.status(200).send(konto);
+})
+
 app.use((err, req, res, next) => {
-    res.status(500).send("Error: " + err.message);
+    console.error(err.stack);
+    res.status(500).send("Server Error: Try again later.");
 })
 
 app.listen(port, () => {

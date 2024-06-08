@@ -22,8 +22,8 @@ export async function getKonto(nummer) {
 }
 
 export async function createKonto(nummer, bezeichnung) {
-    const [konto] = await pool.query("insert into konto (nummer, bezeichnung, soll, haben) values (?, ?, 0, 0)", [nummer, bezeichnung]);
-    return konto;
+    const konto = await pool.query("insert into konto (nummer, bezeichnung, soll, haben) values (?, ?, 0, 0)", [nummer, bezeichnung]);
+    return konto[0];
 }
 
 export async function updateKontoSoll(nummer, soll) {
