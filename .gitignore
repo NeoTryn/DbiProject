@@ -1,4 +1,26 @@
 backend/node_modules
 backend/.env
-frontend/node_modules
-frontend/.env
+
+frontend/accounting-tool/.DS_Store
+frontend/accounting-tool/node_modules
+frontend/accounting-tool//dist
+
+
+# local env files
+frontend/accounting-tool/.env.local
+frontend/accounting-tool/.env.*.local
+
+# Log files
+frontend/accounting-tool/npm-debug.log*
+frontend/accounting-tool/yarn-debug.log*
+frontend/accounting-tool/yarn-error.log*
+frontend/accounting-tool/pnpm-debug.log*
+
+# Editor directories and files
+frontend/accounting-tool/.idea
+frontend/accounting-tool/.vscode
+frontend/accounting-tool/*.suo
+frontend/accounting-tool/*.ntvs*
+frontend/accounting-tool/*.njsproj
+frontend/accounting-tool/*.sln
+frontend/accounting-tool/*.sw?
