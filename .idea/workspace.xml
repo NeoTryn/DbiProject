@@ -5,10 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ef270b9-bb93-4dc1-8905-76df671cd4f3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/accounting-tool/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/kontenerstellung.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/kontenerstellung.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/kontenplan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/kontenplan.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/DbiProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DbiProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/accounting-tool/.browserslistrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/accounting-tool/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/accounting-tool/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/accounting-tool/babel.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/accounting-tool/jsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/accounting-tool/lint-staged.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/accounting-tool/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/accounting-tool/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/accounting-tool/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/accounting-tool/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/accounting-tool/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/accounting-tool/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/accounting-tool/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/accounting-tool/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/accounting-tool/vue.config.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +44,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
       </list>
@@ -37,32 +64,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Database Script.schema.sql.executor&quot;: &quot;Run&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Node.js.database.js.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Michael\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Database Script.schema.sql.executor": "Run",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Node.js.database.js.executor": "Run",
+    "Node.js.index.js.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/felix/WebstormProjects/DbiProject",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.JavaScript",
+    "ts.external.directory.path": "C:\\Users\\Michael\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ],
-    &quot;RunConfigurationTargetLRU&quot;: [
-      &quot;bb1a1a35-6357-4408-b63a-d0ca977748f1&quot;
+    "RunConfigurationTargetLRU": [
+      "bb1a1a35-6357-4408-b63a-d0ca977748f1"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="schema.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/schema.sql" />
@@ -95,11 +126,18 @@
       <workItem from="1717825805423" duration="2656000" />
       <workItem from="1717828905529" duration="2747000" />
       <workItem from="1717860634701" duration="352000" />
+      <workItem from="1718000070845" duration="19000" />
+      <workItem from="1718000091505" duration="551000" />
+      <workItem from="1718000659386" duration="809000" />
+      <workItem from="1718001489978" duration="3407000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
